@@ -8,10 +8,51 @@
 </head>
 <body>
     <h1>Variables</h1>
-  
+  <a href="https://a14121-54739922.cluster211.canvas-user-content.com/courses/14121~21049/files/14121~/course%20files/bootcamps/propedeutico-git/contenido/tema_07.html">Este enlace lleva al pdf del tema principal</a>
 
     <script>
-        const bigInt = 123456789012345678901234567890n;
+/*
+En JavaScript, una variable es un contenedor que se utiliza para almacenar valores. 
+Los valores pueden ser de cualquier tipo, incluyendo números, cadenas de texto, objetos, funciones y booleanos.
+
+JavaScript es un lenguaje de TIPADO DINÁMICO, lo que significa que no es necesario especificar el tipo de datos de una variable en el momento de la declaración. En su lugar, el tipo de datos de una variable se determina automáticamente en tiempo de ejecución. Esto significa que una misma variable puede almacenar diferentes tipos de datos a lo largo de su vida útil. 
+
+-------------------
+
+Variables y tipos de datos en JavaScript. En JavaScript existen los siguientes tipos de datos:
+
+- Number.
+- String.
+- Boolean.
+- Null.
+- Undefined.
+- BigInt.
+- Symbol.
+- Object.
+- Function.
+
+En cuanto a variables, NO EXISTE UN LÍMITE específico en la cantidad de variables que se pueden crear en JavaScript, sino que está limitado por la memoria disponible en el dispositivo en el que se está ejecutando el código. Por lo tanto, puedes crear tantas variables como necesites en tu código, siempre y cuando la memoria del dispositivo lo permita
+
+-------------------------------
+
+Los identificadores deben comenzar con:
+
+- Una letra 
+- Un signo de dolar $ 
+- Un guión bajo _
+- Nunca con números o caracteres especiales.
+
+*/
+
+let Nombre = "René"
+    $Apellido = "Ceron"
+    _Edad = 33;
+
+
+
+const bigInt = 123456789012345678901234567890n;
+
+
 
 
 let esMayorDeEdad = true;
@@ -22,13 +63,14 @@ if (esMayorDeEdad) {
   console.log( "Lo siento, tienes que ser mayor de edad para entrar al bar");
 }
 
-
-const sum = function(a, b) {
+/*
+Una función anónima se define utilizando la palabra clave function y no tiene un nombre explícito. Puedes asignarla a una variable y usar la variable para llamar a la función. Por ejemplo:
+*/
+const suma = function(a, b) {
   return a + b;
-};
+}
 
-
-sum(5, 10); // devuelve 15
+console.log(suma(2, 3)); // Imprime 5
 
 
 let usuario = null;
